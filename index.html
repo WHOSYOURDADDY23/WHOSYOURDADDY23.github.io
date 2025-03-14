@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李泽昊 - 学术个人主页</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            background-color: #f9f9f9;
+        }
+        
+        /* 头部样式 */
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid #eaeaea;
+            margin-bottom: 30px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid #f0f0f0;
+        }
+        
+        h1 {
+            margin: 0;
+            color: #1a1a1a;
+            font-size: 2.2em;
+        }
+        
+        .title {
+            font-size: 1.3em;
+            color: #666;
+            margin: 5px 0;
+            font-weight: normal;
+        }
+        
+        .institution {
+            font-size: 1.1em;
+            color: #888;
+        }
+        
+        /* 主要内容样式 */
+        main {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 30px;
+        }
+        
+        /* 响应式布局 */
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        section {
+            margin-bottom: 30px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        a:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+        
+        .publication {
+            margin-bottom: 15px;
+        }
+        
+        .publication-title {
+            font-weight: bold;
+        }
+        
+        .publication-authors {
+            font-style: italic;
+        }
+        
+        .publication-journal {
+            color: #666;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .contact-icon {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+            font-size: 0.9em;
+            margin-top: 30px;
+            border-top: 1px solid #eaeaea;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="人.png" alt="lzh照片" class="profile-img">
+        <h1>李泽昊</h1>
+        <p class="title"> 工学硕士</p>
+        <p class="institution">机电工程学院，广东工业大学</p>广东工业大学大学城校区
+    </header>
+    
+    <main>
+        <div class="sidebar">
+            <section>
+                <h2>联系方式</h2>
+                <div class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <a href="mailto:professor@university.edu">2206024535@qq.com</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📱</span>
+                    <span>+86 182 0099 8456</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">🏢</span>
+                    <span>广东工业大学大学城校区 工学2号楼 309室</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <span>中国广东省广州市番禺区大学城外环西路100号</span>
+                </div>
+            </section>
+            
+            <section>
+                <h2>研究兴趣</h2>
+                <ul>
+                    <li>人工智能</li>
+                    <li>深度学习</li>
+                    <li>故障诊断</li>
+                    <li>数字孪生</li>
+                    <li>流体动力学</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h2>教育背景</h2>
+                <ul>
+                    <!-- <li><strong>博士</strong>，计算机科学，清华大学，2010</li> -->
+                    <li><strong>硕士</strong>，机械工程，广东工业大学，2026</li>
+                    <li><strong>学士</strong>，车辆工程，太原理工大学，2021</li>
+                </ul>
+            </section>
+        </div>
+        
+        <div class="main-content">
+            <section>
+                <h2>个人简介</h2>
+                <p>李泽昊，1999年生，广东广州人，广东工业大学机械工程硕士在读。主要研究方向为结合故障机理驱动的机械/流体动力学数字孪生技术与小样本数据驱动的基于深度迁移学习模型的旋转机械智能故障诊断。</p>
+                <!-- <p>我的研究团队致力于解决机器学习理论与应用中的关键问题，特别是在计算机视觉和自然语言处理领域取得了一系列突破性成果。我们的研究成果已在ACL、CVPR、NeurIPS等顶级国际会议和期刊上发表论文百余篇，多次获得会议最佳论文奖。</p> -->
+            </section>
+            
+            <section>
+                <h2>发表论文</h2>
+                <div class="publication">
+                    <p class="publication-title">基于物理神经网络的可解释离心泵智能故障诊断</p>
+                    <p class="publication-authors">李泽昊, czy, lhq, gyp</p>
+                    <p class="publication-journal">THE JOURNAL OF SCIENCE and NATURE, 2077, 46(5): 1089-1102</p>
+                </div>
+                
+                <!-- <div class="publication">
+                    <p class="publication-title">An Efficient Approach for Multi-modal Learning in Vision-Language Models</p>
+                    <p class="publication-authors">Zhang, S., Wang, L., & Chen, Y.</p>
+                    <p class="publication-journal -->
